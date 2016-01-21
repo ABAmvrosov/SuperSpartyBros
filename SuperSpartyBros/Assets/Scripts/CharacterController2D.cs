@@ -46,6 +46,7 @@ public class CharacterController2D : MonoBehaviour {
 	bool _facingRight = true;
 	bool _isGrounded = false;
 	bool _isRunning = false;
+	bool _canDoubleJump = false;
 
 	// store the layer the player is on (setup in Awake)
 	int _playerLayer;
@@ -108,17 +109,21 @@ public class CharacterController2D : MonoBehaviour {
 		// whatIsGround layer
 		_isGrounded = Physics2D.Linecast(_transform.position, groundCheck.position, whatIsGround);  
 
+
+		// allow douable jump after grounded
+		if (_isGrounded) {
+			_canDoubleJump = true;
+		}
+
 		// Set the grounded animation states
 		_animator.SetBool("Grounded", _isGrounded);
 
-		if(_isGrounded && Input.GetButtonDown("Jump")) // If grounded AND jump button pressed, then allow the player to jump
-		{
-			// reset current vertical motion to 0 prior to jump
-			_vy = 0f;
-			// add a force in the up direction
-			_rigidbody.AddForce (new Vector2 (0, jumpForce));
-			// play the jump sound
-			PlaySound(jumpSFX);
+		if (_isGrounded && Input.GetButtonDown ("Jump")) { // If grounded AND jump button pressed, then allow the player to jump
+			DoJump ();
+		} else if (_canDoubleJump && Input.GetButtonDown ("Jump")) { // If grounded AND jump button pressed, then allow the player to jump 
+			DoJump ();
+			// disable double jump after double jumping since you can only really do it once
+			_canDoubleJump = false;
 		}
 	
 		// If the player stops jumping mid jump and player is not yet falling
@@ -179,6 +184,16 @@ public class CharacterController2D : MonoBehaviour {
 		{
 			this.transform.parent = null;
 		}
+	}
+
+	// make the player jump
+	void DoJump() {
+		// reset current vertical motion to 0 prior to jump
+		_vy = 0f;
+		// add a force in the up direction
+		_rigidbody.AddForce (new Vector2 (0, jumpForce));
+		// play the jump sound
+		PlaySound (jumpSFX);
 	}
 
 	// do what needs to be done to freeze the player
