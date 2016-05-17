@@ -1,0 +1,43 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 520    (ID=0x1040)
+    Vendor:   NVIDIA
+    VRAM:     462 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.048 seconds
+desktop: 1280x1024 60Hz; virtual: 2560x1024 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: E:\Reps\SuperSpartyBros\SuperSpartyBros\Builds\Windows\SuperSpartyBros_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1254 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.066408 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 364.
+Total: 0.284881 ms (FindLiveObjects: 0.025813 ms CreateObjectMapping: 0.034521 ms MarkObjects: 0.219570 ms  DeleteObjects: 0.004354 ms)
+
+Player State reset.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.692300 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 674.
+Total: 0.365432 ms (FindLiveObjects: 0.043540 ms CreateObjectMapping: 0.054426 ms MarkObjects: 0.255647 ms  DeleteObjects: 0.011196 ms)
+

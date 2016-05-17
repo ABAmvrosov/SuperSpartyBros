@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Tess\Assets\BoardManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Tess\Assets\Scripts\GameManager.cs">
     <Files>
-      <File FileName="..\..\Tess\Assets\BoardManager.cs" Line="7" Column="25" />
+      <File FileName="..\..\Tess\Assets\Scripts\GameManager.cs" Line="44" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
